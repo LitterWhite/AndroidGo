@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/img_bg" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+        <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#8bc34a"
+        android:gravity="center"
+        android:text="计划表"
+        android:textColor="#ffffff"
+        android:textSize="25sp" />
+        <TextView
+            android:gravity="center"
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="农作物：水稻" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+           
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/img_heng"
+            android:contentDescription="@string/str_vertical" />
+
+        <ListView
+            android:id="@+id/ListView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000" >
+        </ListView>
+
+        
+
+    </LinearLayout>
+
+</FrameLayout>
