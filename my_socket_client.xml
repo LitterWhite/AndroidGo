@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed" >
+
+    <TextView
+        android:id="@+id/connect"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_weight="0.4"
+        android:background="#8bc34a"
+        android:gravity="center"
+        android:text="联系客服"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/connect"
+        android:gravity="center" />
+
+    <ListView
+        android:id="@+id/msg_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sendEdit"
+        android:layout_below="@+id/time"
+        android:divider="#ededed" >
+
+    </ListView>
+
+    <EditText
+        android:id="@+id/sendEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sendbtn"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/sendbtn"
+        android:hint="在这里输入内容" />
+
+    <Button
+        android:id="@+id/sendbtn"
+        android:layout_width="88dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/shape"
+        android:text="发送"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>
