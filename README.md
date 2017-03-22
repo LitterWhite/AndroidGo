@@ -1,4 +1,3 @@
 # AndroidGo
-南通实训
-
-This is the first change
+## Widget
+为APP增加桌面小部件的功能
